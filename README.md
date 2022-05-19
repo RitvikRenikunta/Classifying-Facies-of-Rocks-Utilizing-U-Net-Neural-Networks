@@ -16,7 +16,7 @@ Numerous procedures and methodologies have been used to classify rock facies thr
 
 Our dataset is from “A machine-learning benchmark for facies classification,” authored by Yazeed Alaudah, from the Georgia Institute of Technology [6]. The dataset consists of data of over 1200 different images of rocks with 6 NumPy files. Each file contains many NumPy arrays, which are the numerical representations of the images based on pixel values. Three of these files are the rocks themselves, whereas the other three files are labels of the rocks. These labels are utilized in the training process of the U-net. Each image was represented with the size 701 x 255 pixels.
 # Methods
-Firstly, image resizing is conducted as the images from the original dataset were 701 x 255 arrays, which are too large for training as it could cause computational overhead. Thus, each image, including the labels, was resized to the size 176 x 64. To make sure no data was lost, a histogram was plotted, including the distribution of every distinct pixel value. The resized image distribution perfectly matched the original image distribution, indicating that approximately no data was lost, as seen in Figure 2. 
+Firstly, image resizing is conducted as the images from the original dataset were 701 x 255 arrays, which are too large for training as it could cause computational overhead. Thus, each image, including the labels, was resized to the size 176 x 64. To make sure no data was lost, a histogram was plotted, including the distribution of every distinct pixel value. The resized image distribution perfectly matched the original image distribution, indicating that approximately no data was lost, as seen in Figure 2. 
 
 
 
